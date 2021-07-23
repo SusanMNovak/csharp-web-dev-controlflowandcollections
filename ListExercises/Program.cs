@@ -24,7 +24,13 @@ namespace ListExercises
                 Console.WriteLine(word);
             }
 
-        }
+            int length = 0;
+            Console.WriteLine("Word length?");
+            length = int.Parse(Console.ReadLine());
+
+            PrintXLettersWord(PrintWordList(), length);
+
+            }
 
         //1. Write a static method to find the sum of all the even numbers in a List.
 
@@ -59,13 +65,15 @@ namespace ListExercises
 
         //4. Modify your code to prompt the user to enter the word length for the search.
 
-        public static void PrintXLettersWorda(List<string> wordList, int length)
+        public static void PrintXLettersWord(List<string> wordList, int length)
         {
+            
+
             foreach (string word2 in wordList)
             {
                 if (word2.Length == length)
                 {
-                    Console.WriteLine(word2;
+                    Console.WriteLine(word2);
 
 
                 }
